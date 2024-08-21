@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <!-- web icon -->
+    <link rel="icon" type="image/png" href="./assets/bookmark.png">
+    <!-- BOOTSTRAB -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontAsome -->
+    <!-- <link rel="stylesheet" href="./css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="text-center fs-1 fw-bolder pt-5">
+      ENOUGH SPACE FOR ALL YOUR BOOKMARKS
+    </header>
+
+    <div class="bookmark-rob d-flex justify-content-center align-items-center">
+      <button onclick="toggleSideList()" class="btn btn-outline-light border-0 p-0 m-0">All Bookmarks</button>
+    </div>
+
+    <div class="bookmark-bar d-flex flex-column justify-content-start align-items-center bg-dark">
+      <!-- search bar -->
+       <div class="search my-3 w-100 d-flex justify-content-evenly align-items-center">
+
+         <input oninput="searchSite(this.value)" type="text" id="searchInput" placeholder="Search..." class="form-control w-75 bg-transparent text-light" />
+        </div>
+
+      <!-- site list -->
+       <div id="site-side-list" class="w-100 p-4">
+          
+       </div>
+    </div>
+
+    <section class=" h-75 d-flex justify-content-center align-items-center">
+      <div class="container p-3 w-75 d-flex justify-content-evenly align-items-center flex-wrap">
+
+        <div name ="defult" id="add" class="site-icon text-center m-4 px-4 pt-1">
+          <div class="add-icon mb-2 d-flex justify-content-center align-items-center fs-1 fw-bold text-light rounded-circle bg-dark">
+            <span>+</span>
+          </div>
+          <div class="title fw-bold text-light fs-5 text-center">
+            <p>ADD</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div id="ipBox" class="container d-flex flex-column justify-content-around align-items-center p-5 d-none">
+        <input type="text" id="inputTitle" placeholder="Enter Title" class="form-control w-75 mx-auto mb-4 bg-transparent text-light" />
+        <input required type="url" id="inputUrl" placeholder="Enter URL" class="form-control w-75 mx-auto mb-4 bg-transparent text-light" />
+        <h5 class="text-danger d-none"></h5>
+        <div class="btns w-75 d-flex justify-content-center">
+            <button id="addBtn" class="btn btn-outline-primary mx-2">Add</button>
+            <button id="cancelBtn" class="btn btn-outline-primary mx-2">Cancel</button>
+        </div>
+    </div>
+
+    <div class="astronaut floating-body">
+      <i class="fa-solid fa-user-astronaut"></i>
+    </div>
+    <div class="rocket floating-body">
+      <i class="fa-solid fa-rocket"></i>
+    </div>
+
+
+    <!-- bootstrap  -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- custom JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
