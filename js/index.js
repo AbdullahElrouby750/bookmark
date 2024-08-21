@@ -100,7 +100,7 @@ function newQuickBookmark(title, url) {
           </div>
           <button name="${title}" class="xBtn text-danger fs-5 bg-transparent border-0 d-none">x</button>
           <div class="title fw-bold text-light fs-5 d-flex justify-content-center align-items-center">
-            <p class = " w-50 overflow-hidden">${title}</p>
+            <p class = " w-100 overflow-hidden">${title}</p>
           </div>`;
     if (quickBookmarkList.length < 7) bookMarkSection.prepend(site);
     else if (quickBookmarkList.length == 7) {
