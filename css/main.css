@@ -31,9 +31,10 @@ header {
     position: absolute;
     width: 50%;
     top: 0%;
+    display: none;
     transform: translateX(200%);
     z-index: 1;
-    transition: transform 0.5s 0.085s ease-in-out;
+    transition: transform 0.5s 0.085s ease-in-out, display 0.1s 0.1s ease-in-out;
 }
 
 a{
@@ -89,8 +90,13 @@ a{
 p{
     overflow-y: hidden;
 }
+<<<<<<< HEAD
 /* 
 .floating-body{
+=======
+
+/*.floating-body{
+>>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
     position: absolute;
     font-size: 5rem;
     color: rgba(250, 235, 215, 0.534);
@@ -105,10 +111,14 @@ p{
 .rocket{
     transform: translate(2200%, -250%);
     animation: floating 20s 5s linear infinite;
-}
 
 
 
+<<<<<<< HEAD
+=======
+
+ animations 
+>>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
 @keyframes floating{
     0% {
         transform: translate(calc(2000% - 0%), calc(-500%));
@@ -263,8 +273,13 @@ p{
     100% {
         transform: translate(calc(2000% - 2500%), calc(-500%));
     }
+<<<<<<< HEAD
 }
  */
+=======
+}*/
+
+>>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
 
 @keyframes textAnimation {
     0% {

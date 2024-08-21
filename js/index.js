@@ -191,10 +191,12 @@ function toggleSideList() {
     if (active) {
         bookmarkRob.style.transform = `translateX(0%)`;
         bookmarkBar.style.transform = `translateX(200%)`;
+        bookmarkBar.style.display = `none`;
     }
     else {
         bookmarkRob.style.transform = `translateX(-250%)`;
         bookmarkBar.style.transform = `translateX(100%)`;
+        bookmarkBar.style.display = `block`;
     }
 }
 
