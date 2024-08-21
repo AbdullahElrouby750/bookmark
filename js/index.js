@@ -93,14 +93,14 @@ function updateLocalStorage() {
 function newQuickBookmark(title, url) {
     const site = document.createElement('div');
     site.id = title;
-    site.classList.add("site-icon", "text-center", "mx-4", "px-4", "pt-1");
+    site.classList.add("site-icon", "d-flex", "flex-column" ,"justify-content-center" ,"align-items-center", "mx-4", "px-4", "pt-1");
     site.innerHTML = `
-         <div class="add-icon mb-2 d-flex justify-content-center align-items-center fs-1 fw-bold text-light rounded-circle">
+         <div class="add-icon bg-dark mb-2 d-flex justify-content-center align-items-center fs-1 fw-bold text-light rounded-circle">
             <i class="fa-regular fa-bookmark"></i>
           </div>
           <button name="${title}" class="xBtn text-danger fs-5 bg-transparent border-0 d-none">x</button>
-          <div class="title fw-bold text-light fs-5 text-center">
-            <p>${title}</p>
+          <div class="title fw-bold text-light fs-5 d-flex justify-content-center align-items-center">
+            <p class = " w-50 overflow-hidden">${title}</p>
           </div>`;
     if (quickBookmarkList.length < 7) bookMarkSection.prepend(site);
     else if (quickBookmarkList.length == 7) {

@@ -89,7 +89,7 @@ a{
 p{
     overflow-y: hidden;
 }
-
+/* 
 .floating-body{
     position: absolute;
     font-size: 5rem;
@@ -109,7 +109,6 @@ p{
 
 
 
-/* animations */
 @keyframes floating{
     0% {
         transform: translate(calc(2000% - 0%), calc(-500%));
@@ -265,7 +264,7 @@ p{
         transform: translate(calc(2000% - 2500%), calc(-500%));
     }
 }
-
+ */
 
 @keyframes textAnimation {
     0% {
