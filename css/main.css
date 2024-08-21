@@ -90,7 +90,7 @@ p{
     overflow-y: hidden;
 }
 
-.floating-body{
+/*.floating-body{
     position: absolute;
     font-size: 5rem;
     color: rgba(250, 235, 215, 0.534);
@@ -105,11 +105,11 @@ p{
 .rocket{
     transform: translate(2200%, -250%);
     animation: floating 20s 5s linear infinite;
-}
 
 
 
-/* animations */
+
+ animations 
 @keyframes floating{
     0% {
         transform: translate(calc(2000% - 0%), calc(-500%));
@@ -264,7 +264,7 @@ p{
     100% {
         transform: translate(calc(2000% - 2500%), calc(-500%));
     }
-}
+}*/
 
 
 @keyframes textAnimation {
