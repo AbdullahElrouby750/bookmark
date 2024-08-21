@@ -90,13 +90,11 @@ a{
 p{
     overflow-y: hidden;
 }
-<<<<<<< HEAD
 /* 
 .floating-body{
 =======
 
 /*.floating-body{
->>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
     position: absolute;
     font-size: 5rem;
     color: rgba(250, 235, 215, 0.534);
@@ -113,12 +111,7 @@ p{
     animation: floating 20s 5s linear infinite;
 
 
-
-<<<<<<< HEAD
-=======
-
  animations 
->>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
 @keyframes floating{
     0% {
         transform: translate(calc(2000% - 0%), calc(-500%));
@@ -273,14 +266,8 @@ p{
     100% {
         transform: translate(calc(2000% - 2500%), calc(-500%));
     }
-<<<<<<< HEAD
 }
  */
-=======
-}*/
-
->>>>>>> f90f018de283dbe55fe0a3f854cf977b2423036d
-
 @keyframes textAnimation {
     0% {
         background: linear-gradient(to right, hsl(240, 100%, 40%), hsl(0, 100%, 30%), hsl(310, 100%, 25%));
